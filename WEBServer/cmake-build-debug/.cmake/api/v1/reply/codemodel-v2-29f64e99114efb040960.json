@@ -1,0 +1,87 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.26"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "WEBServer",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "WEBServer::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-WEBServer-Debug-e1b1d7b9e2d94c0f50e6.json",
+					"name" : "WEBServer",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "auxfunc::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-auxfunc-Debug-d1487b4f43a07dd6bfe6.json",
+					"name" : "auxfunc",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "client::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-client-Debug-8ec1b21a7b9c5496c02b.json",
+					"name" : "client",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "client_API::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-client_API-Debug-666b9b93c87c88568c33.json",
+					"name" : "client_API",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/sam_s/Desktop/WEBServer/cmake-build-debug",
+		"source" : "C:/Users/sam_s/Desktop/WEBServer"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 5
+	}
+}
