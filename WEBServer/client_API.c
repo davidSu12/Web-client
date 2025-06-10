@@ -56,4 +56,28 @@ SOCKET connect_to_host(char *hostname, char *port){
 
 void send_request_GET(SOCKET s, char *hostname, char *port, char *path){
 
+
+    char buffer[2048];
+    char host_name[256];
+
+    if(gethostname(host_name, 256)){
+        fprintf(stderr, "Couldn't get the hostname of the computer");
+    }
+    
+    /*
+    * TODO: uncontrolled access to buffer may ocasionally result in a buffer overflow. May use snprintf
+    */
+
+
+
+    sprintf(buffer, "GET /%s HTTP/1.1\r\n", path);
+    sprintf(buffer + strlen(buffer),"Host: %s:%s\r\n", hostname, port);
+    sprintf(buffer + strlen(buffer),"Connection: close\r\n");
+    sprintf(buffer + strlen(buffer),"User-Agent: %s\r\n", strlen(host_name) > 0 ? host_name: "unknown");
+    sprintf(buffer + strlen(buffer), "\r\n"); //this marks the end of the header
+
+    send(s,buffer,2048,0);
+
+
 }
+
