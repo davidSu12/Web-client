@@ -4,9 +4,8 @@
 
 #ifndef WEBSERVER_AUXFUNC_H
 #define WEBSERVER_AUXFUNC_H
-#include "header.h"
 
-
+#include <string.h>
 
 int parse_url(char *url,
                char **hostname,
@@ -14,8 +13,7 @@ int parse_url(char *url,
                char **path
                );
 
-SOCKET connect_to_host(char *hostname, char *port);
-void send_request_GET(SOCKET s, char *hostname, char *port, char *path);
+
 
 
 #endif //WEBSERVER_AUXFUNC_H
